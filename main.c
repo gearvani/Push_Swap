@@ -72,7 +72,10 @@ int	main(int argc, char **argv)
 	index_stack(&stack);
 	if (_is_sorted(&stack) == -1)
 		return (cleanup_on_failure(&stack));
-	selection_sort(&stack);
+	if (stack.size <= 5)
+		bubble_sort(&stack);
+	else
+		selection_sort(&stack);
 	debug(&stack);
 	cleanup(&stack);
 }
