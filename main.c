@@ -48,6 +48,18 @@ static int	_is_sorted(t_stack *stack)
 	return (error_msg_int("error: is_sorted\n"));
 }
 
+void	debug(t_stack *stack)
+{
+	int i = 0;
+	printf("\n\n=======PUSH SWAP DEBUG========\n\nstack:\n");
+
+	while(stack->a[i])
+	{
+		printf("%i\n",stack->a[i]);
+		i++;
+	}
+}
+
 int	main(int argc, char **argv)
 {
 	t_stack	stack;
@@ -60,5 +72,7 @@ int	main(int argc, char **argv)
 	index_stack(&stack);
 	if (_is_sorted(&stack) == -1)
 		return (cleanup_on_failure(&stack));
+	selection_sort(&stack);
+	debug(&stack);
 	cleanup(&stack);
 }

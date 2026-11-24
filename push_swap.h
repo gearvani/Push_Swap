@@ -55,4 +55,7 @@ void	rr(t_stack *stack);
 void	rra(t_stack *stack);
 void	rrb(t_stack *stack);
 
+//selection_sort.c
+void	selection_sort(t_stack *stack);
+
 #endif
