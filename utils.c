@@ -35,3 +35,19 @@ void	index_stack(t_stack *stack)
 		counter = 0;
 	}
 }
+
+int	_size(int *stack)
+{
+	int	i;
+
+	i = 0;
+	while (stack[i])
+		i++;
+	return (i);
+}
+void	rrr(t_stack *stack)
+{
+	rra(stack);
+	rrb(stack);
+	ft_putstr_fd("rrr\n", 1);
+}

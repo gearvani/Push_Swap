@@ -6,7 +6,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 # Quell- und Objektdateien
-SRCS = main.c error.c init.c utils.c cleanup.c
+SRCS = main.c error.c init.c utils.c cleanup.c more_operations.c operations.c
 
 OBJS = $(SRCS:.c=.o)
 
