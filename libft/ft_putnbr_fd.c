@@ -6,7 +6,7 @@
 /*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 13:50:26 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/08/21 19:19:24 by georgios-ar      ###   ########.fr       */
+/*   Updated: 2026/11/24 16:06:17 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,3 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	ft_putnbr_fd(-2147483648, 1);
 }*/
-

@@ -6,7 +6,7 @@
 /*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:00:01 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/08/21 18:03:50 by georgios-ar      ###   ########.fr       */
+/*   Updated: 2026/11/24 16:07:19 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,11 +78,11 @@ void	*free_split(char **result)
 	return (NULL);
 }
 
-int skip_sep(const char *str, char sep, int pos)
+int	skip_sep(const char *str, char sep, int pos)
 {
 	while (str[pos] == sep && str[pos])
 		pos++;
-	return(pos);
+	return (pos);
 }
 
 char	**ft_split(const char *str, char sep)
@@ -112,7 +112,6 @@ char	**ft_split(const char *str, char sep)
 	}
 	return (result);
 }
-
 
 /*int main()
 {

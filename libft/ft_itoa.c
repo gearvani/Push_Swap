@@ -6,7 +6,7 @@
 /*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 17:15:58 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/08/22 17:31:15 by georgios-ar      ###   ########.fr       */
+/*   Updated: 2026/11/24 16:05:37 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	nbr_len(int long n)
 	faktor = 10;
 	len = 0;
 	if (n == 0)
-		return(1);
+		return (1);
 	while (n >= i)
 	{
 		i = (i * faktor);
