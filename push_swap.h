@@ -77,7 +77,6 @@ void	index_stack(t_stack *stack);
 int		stack_size(int *stack);
 int		validate_args(t_stack *stack);
 
-
 //swap.c
 void	sa(t_stack *stack);
 void	sb(t_stack *stack);
@@ -97,9 +96,8 @@ void	rra(t_stack *stack);
 void	rrb(t_stack *stack);
 void	rrr(t_stack *stack);
 
-//selection_sort.c & bubble_sort.c
+//selection_sort.c
 void	selection_sort(t_stack *stack);
-void	bubble_sort(t_stack *stack);
 
 //parser.c
 int	parse_args(t_stack *stack, int argc, char **argv);
@@ -109,5 +107,8 @@ double	compute_disorder(t_stack *stack);
 
 //bench.c
 void	print_bench(t_bench *bench);
+
+//chunk_sort.c
+void	chunk_sort(t_stack *stack);
 
 #endif

@@ -46,7 +46,7 @@ static void	_run_strategy(t_stack *stack)
 	{
 		stack->bench.strategy = "Medium";
 		stack->bench.complexity = "O(n*sqrt(n))";
-		selection_sort(stack);
+		chunk_sort(stack);
 	}
 	else if (stack->mode == MODE_COMPLEX)
 	{

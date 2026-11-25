@@ -6,8 +6,8 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 # Quell- und Objektdateien
-SRCS = main.c error.c init.c utils.c cleanup.c push.c reverse_rotate.c swap.c selection_sort.c bubble_sort.c \
-radix_sort.c rotate.c disorder.c parser.c bench.c
+SRCS = main.c error.c init.c utils.c cleanup.c push.c reverse_rotate.c swap.c selection_sort.c \
+radix_sort.c rotate.c disorder.c parser.c bench.c chunk_sort.c
 
 OBJS = $(SRCS:.c=.o)
 
