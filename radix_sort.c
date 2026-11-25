@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   radix_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
+/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/25 17:27:18 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/25 18:12:36 by georgios-ar      ###   ########.fr       */
+/*   Updated: 2026/11/25 22:13:36 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	radix_sort(t_stack *stack)
 				pb(stack);
 			j++;
 		}
-		while (_size(stack->b) > 0)
+		while (stack_size(stack->b) > 0)
 			pa(stack);
 		i++;
 	}

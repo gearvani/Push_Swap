@@ -18,12 +18,32 @@
 # include <stdbool.h>
 # include "libft.h"
 
+typedef struct s_bench
+{
+	bool	enabled;
+	double	disorder;
+	char	*strategy;
+	char	*complexity;
+	int		sa;
+	int		sb;
+	int		ss;
+	int		pa;
+	int		pb;
+	int		ra;
+	int		rb;
+	int		rr;
+	int		rra;
+	int		rrb;
+	int		rrr;
+}	t_bench;
+
 typedef struct s_stack
 {
 	char	**temp;
 	int		*a;
 	int		*b;
 	int		size;
+	t_bench	bench;
 }	t_stack;
 
 //cleanup.c
@@ -43,20 +63,26 @@ int		init(t_stack *stack, int argc, char **argv);
 
 //utils.c
 void	index_stack(t_stack *stack);
-int	_size(int *stack);
-void	rrr(t_stack *stack);
+int		stack_size(int *stack);
 
-//operations00-02.c
+//swap.c
 void	sa(t_stack *stack);
 void	sb(t_stack *stack);
 void	ss(t_stack *stack);
+
+//push.c
 void	pa(t_stack *stack);
 void	pb(t_stack *stack);
+
+//rotate.c
 void	ra(t_stack *stack);
 void	rb(t_stack *stack);
 void	rr(t_stack *stack);
+
+//reverse_rotate.c
 void	rra(t_stack *stack);
 void	rrb(t_stack *stack);
+void	rrr(t_stack *stack);
 
 //selection_sort.c & bubble_sort.c
 void	selection_sort(t_stack *stack);

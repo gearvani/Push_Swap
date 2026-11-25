@@ -63,8 +63,10 @@ void	debug(t_stack *stack)
 int	main(int argc, char **argv)
 {
 	t_stack	stack;
+	t_bench	bench;
 
 	ft_bzero(&stack, sizeof(t_stack));
+	ft_bzero(&bench, sizeof(t_bench));
 	if (init(&stack, argc, argv) == -1)
 		return (cleanup_on_failure(&stack));
 	if (_check_dup(&stack) == -1)

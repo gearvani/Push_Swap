@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   selection_sort.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
+/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 20:26:30 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/24 20:42:22 by georgios-ar      ###   ########.fr       */
+/*   Updated: 2026/11/25 22:13:23 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static void	_bring_to_top(t_stack *stack, int pos)
 {
 	int	size;
 
-	size = _size(stack->a);
+	size = stack_size(stack->a);
 	if (pos <= size / 2)
 	{
 		while (pos-- > 0)
@@ -54,12 +54,12 @@ void	selection_sort(t_stack *stack)
 {
 	int	pos;
 
-	while (_size(stack->a) > 0)
+	while (stack_size(stack->a) > 0)
 	{
 		pos = _find_min_pos(stack->a);
 		_bring_to_top(stack, pos);
 		pb(stack);
 	}
-	while (_size(stack->b) > 0)
+	while (stack_size(stack->b) > 0)
 		pa(stack);
 }

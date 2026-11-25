@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   bubble_sort.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
+/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 21:20:00 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/25 16:44:04 by georgios-ar      ###   ########.fr       */
+/*   Updated: 2026/11/25 22:12:13 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int	_is_sorted_a(t_stack *stack, int size)
+static int	_is_sorted(t_stack *stack, int size)
 {
 	int	i;
 
@@ -32,10 +32,10 @@ void	bubble_sort(t_stack *stack)
 	int	j;
 	int	swapped;
 
-	size = _size(stack->a);
+	size = stack_size(stack->a);
 	if (size < 2)
 		return ;
-	while (!_is_sorted_a(stack, size))
+	while (!_is_sorted(stack, size))
 	{
 		swapped = 0;
 		j = -1;
