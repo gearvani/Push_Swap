@@ -71,7 +71,7 @@ static	int	_check_dup(t_stack *stack)
 		{
 			if (ft_atoi(stack->temp[pos_x]) == ft_atoi(stack->temp[pos_y])
 				&& pos_x != pos_y)
-				return (error_msg_int("error: has_dup\n"));
+				return (error_msg_int("Error\n"));
 			pos_y++;
 		}
 		pos_x++;
@@ -91,19 +91,7 @@ static int	_is_sorted(t_stack *stack)
 			return (0);
 		i++;
 	}
-	return (error_msg_int("error: is_sorted\n"));
-}
-
-void	debug(t_stack *stack)
-{
-	int i = 0;
-	printf("\n\n=======PUSH SWAP DEBUG========\n\nstack:\n");
-
-	while(stack->a[i])
-	{
-		printf("%i\n",stack->a[i]);
-		i++;
-	}
+	return (error_msg_int("Error\n"));
 }
 
 int	main(int argc, char **argv)

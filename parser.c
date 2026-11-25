@@ -6,7 +6,7 @@
 /*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/25 22:44:43 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/25 22:44:58 by joschmun         ###   ########.fr       */
+/*   Updated: 2026/11/25 23:04:23 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	_set_flag(t_stack *stack, char *arg)
 	else if (ft_strncmp(arg, "--adaptive", 11) == 0 && !stack->mode)
 		stack->mode = MODE_ADAPTIVE;
 	else
-		return (-1);
+		return (error_msg_int("Error\n"));
 	return (0);
 }
 
