@@ -69,6 +69,8 @@ int	init(t_stack *stack, int argc, char **argv)
 		stack->temp = _save_temp_stack(argv, argc);
 		if (!stack->temp)
 			return (-1);
+		while (stack->temp[stack->size])
+			stack->size++;
 	}
 	if (_init_stack(stack))
 		return (-1);

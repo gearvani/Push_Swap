@@ -35,10 +35,31 @@ int		error_msg_int(char *msg);
 char	*error_msg_pointer(char *msg);
 void	error_msg(char *msg);
 
+//radix_sort.c
+void	radix_sort(t_stack *stack);
+
 //init.c
 int		init(t_stack *stack, int argc, char **argv);
 
 //utils.c
 void	index_stack(t_stack *stack);
+int	_size(int *stack);
+void	rrr(t_stack *stack);
+
+//operations.c & more_operations.c
+void	sa(t_stack *stack);
+void	sb(t_stack *stack);
+void	ss(t_stack *stack);
+void	pa(t_stack *stack);
+void	pb(t_stack *stack);
+void	ra(t_stack *stack);
+void	rb(t_stack *stack);
+void	rr(t_stack *stack);
+void	rra(t_stack *stack);
+void	rrb(t_stack *stack);
+
+//selection_sort.c & bubble_sort.c
+void	selection_sort(t_stack *stack);
+void	bubble_sort(t_stack *stack);
 
 #endif
