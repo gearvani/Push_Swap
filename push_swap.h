@@ -37,6 +37,15 @@ typedef struct s_bench
 	int		rrr;
 }	t_bench;
 
+typedef enum e_mode
+{
+	MODE_NONE,
+	MODE_ADAPTIVE,
+	MODE_SIMPLE,
+	MODE_MEDIUM,
+	MODE_COMPLEX
+}	t_mode;
+
 typedef struct s_stack
 {
 	char	**temp;
@@ -44,6 +53,7 @@ typedef struct s_stack
 	int		*b;
 	int		size;
 	t_bench	bench;
+	t_mode	mode;
 }	t_stack;
 
 //cleanup.c
@@ -59,7 +69,7 @@ void	error_msg(char *msg);
 void	radix_sort(t_stack *stack);
 
 //init.c
-int		init(t_stack *stack, int argc, char **argv);
+int		init_stacks(t_stack *stack);
 
 //utils.c
 void	index_stack(t_stack *stack);
@@ -87,5 +97,14 @@ void	rrr(t_stack *stack);
 //selection_sort.c & bubble_sort.c
 void	selection_sort(t_stack *stack);
 void	bubble_sort(t_stack *stack);
+
+//parser.c
+int	parse_args(t_stack *stack, int argc, char **argv);
+
+//disorder.c
+double	compute_disorder(t_stack *stack);
+
+//bench.c
+void	print_bench(t_bench *bench);
 
 #endif
