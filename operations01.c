@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operations.c                                       :+:      :+:    :+:   */
+/*   operations01.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
+/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 19:21:15 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/24 19:59:38 by georgios-ar      ###   ########.fr       */
+/*   Updated: 2026/11/25 21:43:29 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-/* ---------- SWAP ---------- */
 
 void	sa(t_stack *stack)
 {
@@ -37,15 +35,6 @@ void	sb(t_stack *stack)
 	stack->b[1] = tmp;
 	ft_putstr_fd("sb\n", 1);
 }
-
-void	ss(t_stack *stack)
-{
-	sa(stack);
-	sb(stack);
-	ft_putstr_fd("ss\n", 1);
-}
-
-/* ---------- PUSH ---------- */
 
 void	pa(t_stack *stack)
 {
@@ -96,8 +85,6 @@ void	pb(t_stack *stack)
 	stack->a[size_a - 1] = 0;
 	ft_putstr_fd("pb\n", 1);
 }
-
-/* ---------- ROTATE ---------- */
 
 void	ra(t_stack *stack)
 {

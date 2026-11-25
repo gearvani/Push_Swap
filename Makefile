@@ -3,7 +3,7 @@ NAME = push_swap
 
 # Compiler und Flags
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -g
+CFLAGS = -Wall -Wextra -Werror
 
 # Quell- und Objektdateien
 SRCS = main.c error.c init.c utils.c cleanup.c more_operations.c operations.c selection_sort.c bubble_sort.c radix_sort.c

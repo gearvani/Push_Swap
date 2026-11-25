@@ -46,7 +46,7 @@ void	index_stack(t_stack *stack);
 int	_size(int *stack);
 void	rrr(t_stack *stack);
 
-//operations.c & more_operations.c
+//operations00-02.c
 void	sa(t_stack *stack);
 void	sb(t_stack *stack);
 void	ss(t_stack *stack);
