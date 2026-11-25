@@ -35,6 +35,9 @@ int		error_msg_int(char *msg);
 char	*error_msg_pointer(char *msg);
 void	error_msg(char *msg);
 
+//radix_sort.c
+void	radix_sort(t_stack *stack);
+
 //init.c
 int		init(t_stack *stack, int argc, char **argv);
 

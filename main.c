@@ -74,6 +74,8 @@ int	main(int argc, char **argv)
 		return (cleanup_on_failure(&stack));
 	if (stack.size <= 5)
 		bubble_sort(&stack);
+	if (stack.size > 5)
+		radix_sort(&stack);
 	else
 		selection_sort(&stack);
 	debug(&stack);
