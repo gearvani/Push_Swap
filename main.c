@@ -103,7 +103,8 @@ int	main(int argc, char **argv)
 	res = parse_args(&stack, argc, argv);
 	if (res == 1)
 		return (0);
-	if (res == -1 || init_stacks(&stack) == -1)
+	if (res == -1 || validate_args(&stack) == -1
+		|| init_stacks(&stack) == -1)
 		return (cleanup_on_failure(&stack));
 	if (_check_dup(&stack) == -1)
 		return (cleanup_on_failure(&stack));

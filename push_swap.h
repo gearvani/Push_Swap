@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <stdbool.h>
+# include <limits.h>
 # include "libft.h"
 
 typedef struct s_bench
@@ -74,6 +75,8 @@ int		init_stacks(t_stack *stack);
 //utils.c
 void	index_stack(t_stack *stack);
 int		stack_size(int *stack);
+int		validate_args(t_stack *stack);
+
 
 //swap.c
 void	sa(t_stack *stack);
