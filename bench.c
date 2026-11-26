@@ -6,7 +6,7 @@
 /*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/25 22:53:40 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/25 22:55:09 by joschmun         ###   ########.fr       */
+/*   Updated: 2026/11/26 05:15:43 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,8 @@ void	print_bench(t_bench *bench)
 	int	total;
 
 	total = bench->sa + bench->sb + bench->ss + bench->pa + bench->pb
-		+ bench->ra + bench->rb + bench->rr + bench->rra + bench->rrb + bench->rrr;
+		+ bench->ra + bench->rb + bench->rr + bench->rra + bench->rrb
+		+ bench->rrr;
 	_print_disorder(bench->disorder);
 	ft_putstr_fd("[bench] strategy: ", 2);
 	ft_putstr_fd(bench->strategy, 2);

@@ -100,7 +100,7 @@ void	rrr(t_stack *stack);
 void	selection_sort(t_stack *stack);
 
 //parser.c
-int	parse_args(t_stack *stack, int argc, char **argv);
+int		parse_args(t_stack *stack, int argc, char **argv);
 
 //disorder.c
 double	compute_disorder(t_stack *stack);

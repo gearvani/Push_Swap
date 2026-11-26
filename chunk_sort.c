@@ -6,7 +6,7 @@
 /*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/25 23:50:31 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/25 23:57:23 by joschmun         ###   ########.fr       */
+/*   Updated: 2026/11/26 05:16:51 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,6 @@ static int	_find_max_pos(int *stack)
 	{
 		if (stack[i] > max)
 		{
-
-
 			max = stack[i];
 			pos = i;
 		}
@@ -105,4 +103,3 @@ void	chunk_sort(t_stack *stack)
 	_push_chunks_to_b(stack, chunk);
 	_push_max_to_a(stack);
 }
-	
