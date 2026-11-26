@@ -1,4 +1,4 @@
-This project has been created as part of the 42 curriculum by <gearvani>.
+This project has been created as part of the 42 curriculum by gearvani.
 push_swap
 Description
 
