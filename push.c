@@ -6,7 +6,7 @@
 /*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 19:21:15 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/26 00:02:43 by joschmun         ###   ########.fr       */
+/*   Updated: 2026/11/26 05:13:22 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,3 @@ void	pb(t_stack *stack)
 	ft_putstr_fd("pb\n", 1);
 	stack->bench.pb++;
 }
-
-
