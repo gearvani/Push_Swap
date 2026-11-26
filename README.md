@@ -143,11 +143,9 @@ Official / classic references
 
 How AI was used
 
-AI (Grok / ChatGPT-style assistants) was used in the following limited ways:
+AI (Grok / Gemini assistants) was used in the following limited ways:
 
     Clarifying edge cases of the cost calculation (especially simultaneous rotations and target finding).
     Generating test cases and helping write small unit-test helpers.
     Reviewing README wording and structure to match the 42 Chapter VII requirements.
     Explaining the differences between Turk, radix and chunk approaches so an informed choice could be made.
-
-No AI-generated code was copied into the final submission. All algorithms, data structures and Norm-compliant C code were written and debugged by hand.
