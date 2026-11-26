@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/25 22:44:43 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/25 23:04:23 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:55:27 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:55:29 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/25 21:43:56 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/26 05:15:06 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:56:34 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:56:36 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

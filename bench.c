@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   bench.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/25 22:53:40 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/26 05:15:43 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:52:23 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:54:14 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   chunk_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/25 23:50:31 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/26 05:16:51 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:54:31 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:54:34 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

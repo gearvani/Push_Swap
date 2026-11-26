@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rotate.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/25 21:58:42 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/26 05:14:54 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:56:13 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:56:15 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

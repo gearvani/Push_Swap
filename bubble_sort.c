@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   bubble_sort.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/24 21:20:00 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/25 22:12:13 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:54:24 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:54:27 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

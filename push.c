@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/24 19:21:15 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/26 05:13:22 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:55:42 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:55:43 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

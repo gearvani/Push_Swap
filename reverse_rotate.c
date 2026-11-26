@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/24 19:43:49 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/26 05:14:42 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:56:03 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:56:06 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

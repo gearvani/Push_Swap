@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   radix_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/25 17:27:18 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/26 05:14:21 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:55:51 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:55:53 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

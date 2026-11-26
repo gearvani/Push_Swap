@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   disorder.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
+/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/25 22:51:25 by joschmun          #+#    #+#             */
-/*   Updated: 2026/11/25 22:51:56 by joschmun         ###   ########.fr       */
+/*   Created: 2026/11/26 05:54:48 by georgios-ar       #+#    #+#             */
+/*   Updated: 2026/11/26 05:54:50 by georgios-ar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
