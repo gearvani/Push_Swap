@@ -1,6 +1,4 @@
 This project has been created as part of the 42 curriculum by gearvani.
-push_swap
-Description
 
 push_swap is an algorithmic project from the 42 curriculum.
 The goal is to sort a stack of unique integers in ascending order using only two stacks (A and B) and a restricted set of 11 operations, while producing the shortest possible sequence of instructions.
