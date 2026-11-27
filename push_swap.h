@@ -113,6 +113,7 @@ void	print_bench(t_bench *bench);
 void	chunk_sort(t_stack *stack);
 
 //small_stack.c
+void	sort_two(t_stack *stack);
 void	sort_three(t_stack *stack);
 
 //run_sort.c
