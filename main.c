@@ -25,23 +25,11 @@ static void	_run_adaptive(t_stack *stack)
 static void	_run_strategy(t_stack *stack)
 {
 	if (stack->mode == MODE_SIMPLE)
-	{
-		stack->bench.strategy = "Simple";
-		stack->bench.complexity = "O(n^2)";
-		selection_sort(stack);
-	}
+		run_simple(stack);
 	else if (stack->mode == MODE_MEDIUM)
-	{
-		stack->bench.strategy = "Medium";
-		stack->bench.complexity = "O(n*sqrt(n))";
-		chunk_sort(stack);
-	}
+		run_medium(stack);
 	else if (stack->mode == MODE_COMPLEX)
-	{
-		stack->bench.strategy = "Complex";
-		stack->bench.complexity = "O(n log n)";
-		radix_sort(stack);
-	}
+		run_complex(stack);
 	else
 		_run_adaptive(stack);
 }
