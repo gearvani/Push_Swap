@@ -63,8 +63,8 @@ void	cleanup(t_stack *stack);
 
 //error.c
 int		error_msg_int(char *msg);
-char	*error_msg_pointer(char *msg);
 void	error_msg(char *msg);
+int		validate_args(t_stack *stack);
 
 //radix_sort.c
 void	radix_sort(t_stack *stack);
@@ -75,7 +75,8 @@ int		init_stacks(t_stack *stack);
 //utils.c
 void	index_stack(t_stack *stack);
 int		stack_size(int *stack);
-int		validate_args(t_stack *stack);
+int		is_sorted(t_stack *stack);
+int		check_dup(t_stack *stack);
 
 //swap.c
 void	sa(t_stack *stack);
@@ -110,5 +111,15 @@ void	print_bench(t_bench *bench);
 
 //chunk_sort.c
 void	chunk_sort(t_stack *stack);
+
+//small_stack.c
+void	sort_three(t_stack *stack);
+
+//run_sort.c
+void	run_simple(t_stack *stack);
+void	run_medium(t_stack *stack);
+void	run_complex(t_stack *stack);
+
+
 
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   selection_sort.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: georgios-arvanitidis <georgios-arvaniti    +#+  +:+       +#+        */
+/*   By: joschmun <joschmun@student.42wolfsburg>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/26 05:56:24 by georgios-ar       #+#    #+#             */
-/*   Updated: 2026/11/26 05:56:26 by georgios-ar      ###   ########.fr       */
+/*   Updated: 2026/11/27 19:01:48 by joschmun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
