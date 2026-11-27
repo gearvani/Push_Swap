@@ -3,11 +3,11 @@ NAME = push_swap
 
 # Compiler und Flags
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 # Quell- und Objektdateien
 SRCS = main.c error.c init.c utils.c cleanup.c push.c reverse_rotate.c swap.c selection_sort.c \
-radix_sort.c rotate.c disorder.c parser.c bench.c chunk_sort.c
+radix_sort.c rotate.c disorder.c parser.c bench.c chunk_sort.c sort_small_stack.c run_sort.c
 
 OBJS = $(SRCS:.c=.o)
 

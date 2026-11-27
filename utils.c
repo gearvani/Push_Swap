@@ -46,68 +46,38 @@ int	stack_size(int *stack)
 	return (i);
 }
 
-int	_is_valid_number(char *str)
+int	is_sorted(t_stack *stack)
 {
 	int	i;
 
-	if (!str || !*str)
-		return (0);
 	i = 0;
-	if (str[i] == '+' || str[i] == '-')
-		i++;
-	if (!str[i])
-		return (0);
-	while (str[i])
+	while (stack->a[i + 1])
 	{
-		if (str[i] < '0' || str[i] > '9')
+		if (stack->a[i] > stack->a[i + 1])
 			return (0);
 		i++;
 	}
 	return (1);
 }
 
-int	_safe_atoi(char *str, long *out)
+int	check_dup(t_stack *stack)
 {
-	long	res;
-	int		sign;
-	int		i;
+	int	pos_x;
+	int	pos_y;
 
-	res = 0;
-	sign = 1;
-	i = 0;
-	if (str[i] == '+' || str[i] == '-')
+	pos_x = 0;
+	pos_y = 0;
+	while (stack->temp[pos_x])
 	{
-		if (str[i] == '-')
-			sign = -1;
-		i++;
-	}
-	while (str[i])
-	{
-		if (res > (LONG_MAX - (str[i] - '0')) / 10)
-			return (-1);
-		res = res * 10 + (str[i] - '0');
-		i++;
-	}
-	res *= sign;
-	if (res > INT_MAX || res < INT_MIN)
-		return (-1);
-	*out = res;
-	return (0);
-}
-
-int	validate_args(t_stack *stack)
-{
-	int		i;
-	long	val;
-
-	i = 0;
-	while (stack->temp[i])
-	{
-		if (!_is_valid_number(stack->temp[i]))
-			return (error_msg_int("Error\n"));
-		if (_safe_atoi(stack->temp[i], &val) == -1)
-			return (error_msg_int("Error\n"));
-		i++;
+		while (stack->temp[pos_y])
+		{
+			if (ft_atoi(stack->temp[pos_x]) == ft_atoi(stack->temp[pos_y])
+				&& pos_x != pos_y)
+				return (error_msg_int("Error\n"));
+			pos_y++;
+		}
+		pos_x++;
+		pos_y = 0;
 	}
 	return (0);
 }

@@ -15,23 +15,11 @@
 static void	_run_adaptive(t_stack *stack)
 {
 	if (stack->bench.disorder < 0.2)
-	{
-		stack->bench.strategy = "Adaptive (Simple)";
-		stack->bench.complexity = "O(n^2)";
-		selection_sort(stack);
-	}
+		run_simple(stack);
 	else if (stack->bench.disorder < 0.5)
-	{
-		stack->bench.strategy = "Adaptive (Medium)";
-		stack->bench.complexity = "O(n*sqrt(n))";
-		selection_sort(stack);
-	}
+		run_medium(stack);
 	else
-	{
-		stack->bench.strategy = "Adaptive (Complex)";
-		stack->bench.complexity = "O(n log n)";
-		radix_sort(stack);
-	}
+		run_complex(stack);
 }
 
 static void	_run_strategy(t_stack *stack)
@@ -58,42 +46,6 @@ static void	_run_strategy(t_stack *stack)
 		_run_adaptive(stack);
 }
 
-static	int	_check_dup(t_stack *stack)
-{
-	int	pos_x;
-	int	pos_y;
-
-	pos_x = 0;
-	pos_y = 0;
-	while (stack->temp[pos_x])
-	{
-		while (stack->temp[pos_y])
-		{
-			if (ft_atoi(stack->temp[pos_x]) == ft_atoi(stack->temp[pos_y])
-				&& pos_x != pos_y)
-				return (error_msg_int("Error\n"));
-			pos_y++;
-		}
-		pos_x++;
-		pos_y = 0;
-	}
-	return (0);
-}
-
-static int	_is_sorted(t_stack *stack)
-{
-	int	i;
-
-	i = 0;
-	while (stack->a[i + 1])
-	{
-		if (stack->a[i] > stack->a[i + 1])
-			return (0);
-		i++;
-	}
-	return (error_msg_int("Error\n"));
-}
-
 int	main(int argc, char **argv)
 {
 	t_stack	stack;
@@ -106,11 +58,11 @@ int	main(int argc, char **argv)
 	if (res == -1 || validate_args(&stack) == -1
 		|| init_stacks(&stack) == -1)
 		return (cleanup_on_failure(&stack));
-	if (_check_dup(&stack) == -1)
+	if (check_dup(&stack) == -1)
 		return (cleanup_on_failure(&stack));
 	index_stack(&stack);
 	stack.bench.disorder = compute_disorder(&stack);
-	if (_is_sorted(&stack) == -1)
+	if (is_sorted(&stack))
 		return (cleanup_on_failure(&stack));
 	_run_strategy(&stack);
 	if (stack.bench.enabled)
