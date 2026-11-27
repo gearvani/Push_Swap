@@ -24,14 +24,14 @@ void	sort_three(t_stack *stack)
 	}
 }
 
-// void	sort_four(t_stack *stack)
-// {
-// 	while (stack->a[0] != 1)
-// 		ra(stack);
-// 	pb(stack);
-// 	sort_three(stack);
-// 	pa(stack);
-// }
+void	sort_four(t_stack *stack)
+{
+	while (stack->a[0] != 1)
+		ra(stack);
+	pb(stack);
+	sort_three(stack);
+	pa(stack);
+}
 
 // static void _move_to_stack_b(t_stack *stack, int pivet, int j)
 // {

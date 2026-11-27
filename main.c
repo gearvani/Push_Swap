@@ -15,21 +15,45 @@
 static void	_run_adaptive(t_stack *stack)
 {
 	if (stack->bench.disorder < 0.2)
+	{
+		stack->bench.strategy = "Adaptive (Simple)";
+		stack->bench.complexity = "O(n^2)";
 		run_simple(stack);
+	}
 	else if (stack->bench.disorder < 0.5)
+	{
+		stack->bench.strategy = "Adaptive (Medium)";
+		stack->bench.complexity = "O(n*sqrt(n))";
 		run_medium(stack);
+	}
 	else
+	{
+		stack->bench.strategy = "Adaptive (Complex)";
+		stack->bench.complexity = "O(n log n)";
 		run_complex(stack);
+	}
 }
 
 static void	_run_strategy(t_stack *stack)
 {
 	if (stack->mode == MODE_SIMPLE)
+	{
+		stack->bench.strategy = "Simple";
+		stack->bench.complexity = "O(n^2)";
 		run_simple(stack);
+	}
 	else if (stack->mode == MODE_MEDIUM)
+	{
+		stack->bench.strategy = "Medium";
+		stack->bench.complexity = "O(n*sqrt(n))";
 		run_medium(stack);
+	}
 	else if (stack->mode == MODE_COMPLEX)
+	{
+		stack->bench.strategy = "Complex";
+		stack->bench.complexity = "O(n log n)";
 		run_complex(stack);
+	}
 	else
 		_run_adaptive(stack);
 }
